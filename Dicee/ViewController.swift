@@ -20,9 +20,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        updateDiceImage()
     }
 
     @IBAction func rollButtonPressed(_ sender: UIButton) {
+        updateDiceImage()
+    }
+    
+    func updateDiceImage() {
         randomDiceIndex1 = Int.random(in: 0 ... 5)
         randomDiceIndex2 = Int.random(in: 0 ... 5)
         
