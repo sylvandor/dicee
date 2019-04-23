@@ -27,6 +27,10 @@ class ViewController: UIViewController {
         updateDiceImage()
     }
     
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        updateDiceImage()
+    }
+    
     func updateDiceImage() {
         randomDiceIndex1 = Int.random(in: 0 ... 5)
         randomDiceIndex2 = Int.random(in: 0 ... 5)
